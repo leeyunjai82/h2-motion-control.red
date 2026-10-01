@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """
-H2 헤드 카메라(RealSense) depth 확인 스크립트
+RealSense(D435i 등) depth 확인 스크립트
+※ H2 기본 헤드 카메라는 RealSense 가 아닌 바이노큘러 카메라입니다.
+  외부에 RealSense 를 별도로 장착한 경우에만 사용하고, 헤드 카메라는
+  utils/probe_h2_camera.py 로 먼저 장치를 식별하세요.
 
 1) 연결된 RealSense 장치 / USB 타입 / depth scale 출력
 2) color + depth 스트림 시작 (depth 는 color 에 align)
